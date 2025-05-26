@@ -13,7 +13,19 @@
     "wmtheme",
     "uptime",
     "break",
-    "localip",
+    // Block for Physical LAN IP
+    {
+      "type": "localip",
+      "key": "Local IP (LAN)",
+      "defaultRouteOnly": true
+    },
+    // Block for Tailscale IP
+    {
+      "type": "localip",
+      "key": "Local IP (Tailscale)",
+      "defaultRouteOnly": false,
+      "namePrefix": "Tailscale"
+    },
     "publicip",
     "dns",
     "break",
@@ -27,6 +39,7 @@
     "bluetooth",
     "battery",
     "break",
-    "colors"
+    "colors",
+    "break"
   ]
 }

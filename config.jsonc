@@ -13,11 +13,25 @@
     "wmtheme",
     "uptime",
     "break",
+    // Block for Default Route IP
+    {
+      "type": "localip",
+      "key": "Default Route IP",
+      "defaultRouteOnly": true,
+    },
     // Block for Physical LAN IP
     {
       "type": "localip",
       "key": "Local IP (LAN)",
-      "defaultRouteOnly": true
+      "namePrefix": "Ethernet",
+      "defaultRouteOnly": false
+    },
+    // Block for Physical WLAN IP
+    {
+      "type": "localip",
+      "key": "Local IP (WLAN)",
+      "namePrefix": "Wi-Fi",
+      "defaultRouteOnly": false
     },
     // Block for Tailscale IP
     {

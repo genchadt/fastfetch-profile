@@ -14,11 +14,11 @@
     "uptime",
     "break",
     // Block for Default Route IP
-    {
-      "type": "localip",
-      "key": "Default Route IP",
-      "defaultRouteOnly": true,
-    },
+    //{
+    //  "type": "localip",
+    //  "key": "Default Route IP",
+    //  "defaultRouteOnly": true,
+    //},
     // Block for Physical LAN IP
     {
       "type": "localip",
